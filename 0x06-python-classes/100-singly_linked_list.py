@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''defines a node of a singly linked list'''
+
+
 class Node:
     '''A Node class'''
 
@@ -38,6 +40,9 @@ class SinglyLinkedList:
         new = Node(value)
         if self.__head is None:
             new.next_node = None
+            self.__head = new
+        elif self.__head.data > value:
+            new.next_node = self.__head
             self.__head = new
         else:
             temp = self.__head
