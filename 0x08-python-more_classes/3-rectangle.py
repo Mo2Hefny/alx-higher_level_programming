@@ -49,4 +49,3 @@ class Rectangle:
             [s.append("#") for j in range(self.__width)]
             [s.append("\n") if i != self.__height - 1 else 0]
         return ("".join(s))
-          
