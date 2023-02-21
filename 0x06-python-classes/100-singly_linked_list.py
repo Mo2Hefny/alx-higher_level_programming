@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
+'''defines a node of a singly linked list'''
 class Node:
-    '''A singly linked list class'''
+    '''A Node class'''
 
     def __init__(self, data, next_node=None):
         self.data = data
@@ -29,6 +29,7 @@ class Node:
 
 
 class SinglyLinkedList:
+    '''A singly linked list class'''
 
     def __init__(self):
         self.__head = None
@@ -40,10 +41,10 @@ class SinglyLinkedList:
             self.__head = new
         else:
             temp = self.__head
-        while temp.next_node and new.data > temp.next_node.data:
-            temp = temp.next_node
-        new.next_node = temp.next_node
-        temp.next_node = new
+            while temp.next_node and new.data > temp.next_node.data:
+                temp = temp.next_node
+            new.next_node = temp.next_node
+            temp.next_node = new
 
     def __str__(self):
         ''' Define print() '''
