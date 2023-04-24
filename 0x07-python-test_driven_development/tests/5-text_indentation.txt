@@ -14,12 +14,12 @@ Passing String:
     <BLANKLINE>
     ipsum
 
-Printing a word with spaces around
+Printing a word with spaces around:
 
     >>> text_indentation("    alx    ")
     alx
 
-Printing all special characters
+Printing all special characters:
 
     >>> text_indentation(".?:")
     .
@@ -41,14 +41,14 @@ Printing a non-string:
     	      ...
     TypeError: text must be a string
 
-Printing a char number
+Printing a char number:
 
     >>> text_indentation('2')
     2
 
-Passing an empty string
+Passing an empty string:
 
-    >>> text_indentation('    ')
+    >>> text_indentation("")
 
 Passing None:
 
@@ -60,11 +60,11 @@ Passing None:
 Missing argument:
 
     >>> text_indentation()
-   Traceback (most recent call last):
-   	     ...
-   TypeError: text_indentation() missing 1 required positional argument: 'text'
+    Traceback (most recent call last):
+   	      ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-Passing a text with spaces and one new line 3
+Passing a text with spaces and one new line:
 
-   >>> text_indentation("\n   ")
-   <BLANKLINE>
+    >>> text_indentation("\n   ")
+    <BLANKLINE>
