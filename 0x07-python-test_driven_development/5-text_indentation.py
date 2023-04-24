@@ -18,6 +18,8 @@ def text_indentation(text):
     s = ""
     sub = ""
     for c in text:
+        if c == ' ' and sub == "":
+            continue
         sub = sub + c
         if c in ('.', '?', ':'):
           s = s + sub.strip() + "\n\n"
