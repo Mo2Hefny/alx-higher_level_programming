@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """
 This is the "0-add_integer" module.
 
@@ -9,6 +7,8 @@ The example module supplies one function, add_integer(). For example,
 >>> add_integer(5, 3)
 8
 """
+
+
 def add_integer(a, b=98):
     """
         Adds two integers.
