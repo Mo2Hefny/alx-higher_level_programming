@@ -47,6 +47,13 @@ Passing None:
     	      ...
     TypeError: size must be an integer
 
+Passing string:
+
+    >>> print_square("alx")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: size must be an integer
+
 Missing argument:
 
    >>> print_square()
