@@ -19,7 +19,7 @@ Passing one string:
 
 Passing non-string as argument:
 
-    >>> say_my_name(John)
+    >>> say_my_name(2)
     Traceback (most recent call last):
     	      ...
     TypeError: first_name must be a string
