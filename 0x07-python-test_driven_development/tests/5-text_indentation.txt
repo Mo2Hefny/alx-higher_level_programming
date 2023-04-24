@@ -68,6 +68,15 @@ Printing a non-string:
     	      ...
     TypeError: text must be a string
 
+Printing a char number
+
+    >>> text_indentation('2')
+    2
+
+Passing an empty string
+
+    >>> text_indentation('    ')
+
 Passing None:
 
     >>> text_indentation(None)
