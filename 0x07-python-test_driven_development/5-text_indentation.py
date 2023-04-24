@@ -15,13 +15,13 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    s = ""
-    sub = ""
-    for c in text:
-        if c == ' ' and sub == "":
-            continue
-        sub = sub + c
-        if c in ('.', '?', ':'):
-          s = s + sub.strip() + "\n\n"
-          sub = ""
-    print((s+sub).strip())
+    s = text[:]
+
+    for d in ".?:":
+        list_text = s.split(d)
+        s = ""
+        for line in list_text:
+            line = line.strip(" ")
+            s = line + d if s is "" else s + "\n\n" + line + d
+
+    print(s[:-3], end="")
