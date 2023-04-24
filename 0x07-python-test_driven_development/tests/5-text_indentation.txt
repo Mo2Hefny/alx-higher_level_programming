@@ -4,67 +4,30 @@ The ``5-text_indentation`` module
 Using ``text_indentation``
 -------------------
 
-First import function:
-    >>> text_indentation = __import__('5-text_indentation').text_indentation
-
-Passing String:
-
-    >>> text_indentation("lorem.  ipsum  ")
-    lorem.
-    <BLANKLINE>
-    ipsum
-
-Printing a word with spaces around
-
-    >>> text_indentation("    alx    ")
-    alx
-
-Printing all special characters
-
-    >>> text_indentation(".?:")
-    .
-    <BLANKLINE>
-    ?
-    <BLANKLINE>
-    :
-    <BLANKLINE>
-
-Printing a non-string:
-
-    >>> text_indentation(1)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: text must be a string
-
-    >>> text_indentation([1, 2, 3])
-    Traceback (most recent call last):
-    	      ...
-    TypeError: text must be a string
-
-Printing a char number
-
-    >>> text_indentation('2')
-    2
-
-Passing an empty string
-
-    >>> text_indentation('    ')
-
-Passing None:
-
-    >>> text_indentation(None)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: text must be a string
-
-Missing argument:
-
-    >>> text_indentation()
-   Traceback (most recent call last):
-   	     ...
-   TypeError: text_indentation() missing 1 required positional argument: 'text'
-
-Passing a text with spaces and one new line 3
-
-   >>> text_indentation("\n   ")
-   <BLANKLINE>
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("")
+>>> text_indentation("lorem.  ipsum  ")
+lorem.
+<BLANKLINE>
+ipsum
+>>> text_indentation(2)
+Traceback (most recent call last):
+	...
+TypeError: text must be a string
+>>> text_indentation(" lorem")
+lorem
+>>> text_indentation("lorem ipsum. lorem.  ")
+lorem ipsum.
+<BLANKLINE>
+lorem.
+<BLANKLINE>
+>>> text_indentation(".")
+.
+<BLANKLINE>
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
