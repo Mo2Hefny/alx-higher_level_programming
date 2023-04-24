@@ -59,14 +59,14 @@ Passing a matrix with different rows sizes:
 
 Dividing a matrix which all of its elements aren't integer/float numbers:
 
-    >>> matrix_divided([["1"], ["2", "3"], ["5", "6", "7"]], 10)
+    >>> matrix_divided([["1", "2", "3"], ["5", "6", "7"]], 10)
     Traceback (most recent call last):
     	      ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Dividing a matrix which some of its elements aren't integer/float numbers 2:
 
-    >>> matrix_divided([[1], ["2", "3", 4], [[1, 2, 3], 6.5, "7"]], 10)
+    >>> matrix_divided([[1, "2", "3"], [[1, 2, 3], 6.5, "7"]], 10)
     Traceback (most recent call last):
     	      ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
