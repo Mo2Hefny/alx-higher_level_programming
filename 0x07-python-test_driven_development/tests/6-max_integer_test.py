@@ -13,7 +13,7 @@ class TestMaxInteger(unittest.TestCase):
   def test_repeated_integer(self):
      self.assertEqual(max_integer([5, 100, 100, 3]), 100)
   def test_float_numbers(self):
-      self.assertEqual(max_integer([4.8, 5.9, 5.1, 5]), 5.9)
+      self.assertEqual(max_integer([5.9, 4.8, 5.1, 5]), 5.9)
   def test_negative_numbers(self):
       self.assertEqual(max_integer([-10, -9, -8, -7]), -7)
   def test_big_list(self):
